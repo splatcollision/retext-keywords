@@ -5,9 +5,9 @@
  */
 
 var Retext = require('wooorm/retext@0.5.0');
-var keywords = require('wooorm/retext-keywords@0.2.0');
-var dom = require('wooorm/retext-dom@0.3.1');
-var visit = require('wooorm/retext-visit@0.2.5');
+var keywords = require('wooorm/retext-keywords@0.2.1');
+var dom = require('wooorm/retext-dom@0.3.2');
+var visit = require('wooorm/retext-visit@0.2.6');
 var debounce = require('component/debounce@1.0.0');
 
 /*
@@ -24,7 +24,7 @@ var retext = new Retext()
  */
 
 var $input = document.getElementsByTagName('textarea')[0];
-var $output = document.getElementsByTagName('div')[0];
+var $output = document.getElementsByTagName('div')[1];
 
 /*
  * State.
@@ -50,9 +50,9 @@ function oninputchange() {
 
         var terms = tree.keywords();
 
-        terms.forEach(function (term) {
+        terms.forEach(function (term, n) {
             term.nodes.forEach(function (node) {
-                console.log('node: ', node);
+                node.toDOMNode().className = 'keyword keyword-' + n;
             });
         });
 
