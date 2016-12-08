@@ -6,7 +6,7 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "retext-english": "^2.0.0",
-    "retext-keywords": "^3.0.0",
+    "retext-keywords": "^3.1.0",
     "unified": "^5.1.0"
   },
   "devDependencies": {
@@ -14,7 +14,7 @@
     "xo": "^0.17.1"
   },
   "scripts": {
-    "build": "browserify --ignore-missing index.js > build.js",
+    "build": "browserify index.js > build.js",
     "lint": "xo",
     "test": "npm run build && npm run lint"
   },
