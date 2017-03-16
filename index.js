@@ -32,7 +32,7 @@ function onScroll(ev) {
 
 function render() {
   var text = this.state.text;
-  var tree = processor.run(processor.parse(text));
+  var tree = processor.runSync(processor.parse(text));
   var key = 0;
 
   return h('div', {className: 'editor'}, [
@@ -90,7 +90,9 @@ function color(value) {
 }
 
 function patch() {
-  return patcher;
+  this.use(function () {
+    return patcher;
+  });
 }
 
 function patcher(tree, file) {
