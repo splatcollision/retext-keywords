@@ -11,7 +11,7 @@
     "extraction",
     "retext"
   ],
-  "repository": "retextjs/retext-keywords",
+  "repository": "splatcollision/retext-keywords-french",
   "bugs": "https://github.com/retextjs/retext-keywords/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
