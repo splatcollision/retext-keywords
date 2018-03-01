@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "nlcst-to-string": "^2.0.0",
-    "retext-pos": "^2.0.0",
+    "retext-pos-french": "github:splatcollision/retext-pos-french",
     "stemmer": "^1.0.0",
     "unist-util-visit": "^1.0.0"
   },
@@ -41,7 +41,7 @@
     "build-md": "remark . -qfo",
     "build-bundle": "browserify index.js --ignore-missing --bare -s retextKeywords > retext-keywords.js",
     "build-mangle": "esmangle retext-keywords.js > retext-keywords.min.js",
-    "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
+    "build": "npm run build-md && npm run build-bundle",
     "lint": "xo",
     "test-api": "node test",
     "test-coverage": "nyc --reporter lcov tape test.js",
@@ -63,7 +63,9 @@
       "max-nested-callbacks": "off"
     },
     "ignores": [
-      "retext-keywords.js"
+      "retext-keywords.js",
+      "test.js",
+      "runner.js"
     ]
   },
   "remarkConfig": {

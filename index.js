@@ -3,7 +3,7 @@
 var stemmer = require('stemmer');
 var visit = require('unist-util-visit');
 var nlcstToString = require('nlcst-to-string');
-var pos = require('retext-pos');
+var pos = require('retext-pos-french');
 
 module.exports = keywords;
 
