@@ -1,5 +1,5 @@
 {
-  "name": "retext-keywords",
+  "name": "retext-keywords-french",
   "version": "4.0.1",
   "description": "Keyword extraction with Retext",
   "license": "MIT",
@@ -15,6 +15,7 @@
   "bugs": "https://github.com/retextjs/retext-keywords/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
+    "Kevin Haggerty <splatcol@gmail.com> (http://splatcollision.com)",
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
     "Vladimir Starkov <iamstarkov@gmail.com>"
   ],
