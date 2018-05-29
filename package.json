@@ -1,7 +1,7 @@
 {
   "name": "retext-keywords-french",
   "version": "4.0.1",
-  "description": "Keyword extraction with Retext",
+  "description": "Keyword extraction with Retext - French language support",
   "license": "MIT",
   "keywords": [
     "keyword",
@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "nlcst-to-string": "^2.0.0",
-    "retext-pos-french": "github:splatcollision/retext-pos-french",
+    "retext-pos-french": "^2.0.0",
     "stemmer": "^1.0.0",
     "unist-util-visit": "^1.0.0"
   },
